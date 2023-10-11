@@ -1,0 +1,340 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+h2 img {
+    height: 4rem;
+    width: auto;
+    filter: invert(100%);
+    margin: 0 3% -1% 6%;
+}
+
+img {
+    height: 2.6rem;
+    width: auto;
+    filter: invert(100%);
+    margin: 0 6% -1% 6%;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.container {
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.container div {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.sidebar {
+    background-color: #3b82f6;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    padding: 0;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex: 66;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    flex: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.header {
+    background-color: #FFF;
+    grid-column: 2/4;
+    color: #000;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 2rem;
+
+}
+
+.header .search-section {
+    grid-template-rows: 1/2;
+
+    display: flex;
+}
+
+.search-section form {
+    flex: 9;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-section img {
+    height: 2.6rem;
+    margin: -60% 0 -40% 0;
+    width: auto;
+    filter: invert(100%);
+}
+
+.search-section input[type='text'] {
+    border-top-right-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.search-section button {
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    float: left;
+    width: 6%;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background: #0b7dda;
+}
+
+.icons img {
+    height: 2.6rem;
+    width: auto;
+    filter: invert(0%);
+    padding-top: 20%;
+}
+
+.search-section .icons {
+    flex: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.large-icon img {
+    height: 7rem;
+    width: auto;
+    filter: invert(0%);
+    margin: -2rem 0 0 0;
+}
+
+.header .buttons-section {
+    grid-template-rows: 2/3;
+
+    display: flex;
+}
+
+.buttons-section .greeting-section {
+    flex: 9;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+
+    text-align: left;
+}
+
+.buttons-section .buttons {
+    flex: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 -2% 0 0;
+}
+
+.buttons button {
+    background-color: #3b82f6;
+    width: 5.6rem;
+    height: 3rem;
+    color: white;
+    border-radius: 3rem;
+    border-style: none;
+    font-size: 1.3rem;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.content {
+    color: #000;
+    background-color: #f1f5f9;
+    grid-row: 2/3;
+    grid-column: 2/4;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, .5),
+        inset -6px -6px 10px 0 rgba(255, 255, 255, .5);
+
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+.left-content {
+    grid-column: 1/2;
+
+    display: grid;
+    grid-template-rows: .5fr repeat(9, 1fr) 1fr;
+}
+
+.project-header {
+    grid-row: 1/2;
+}
+
+.projects {
+    grid-row: 2/10;
+    border-radius: 33px;
+    display: grid;
+    gap: 33px;
+    padding-left: 33px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.projects>div {
+    background-color: #FFF;
+    height: 200px;
+    border-radius: 33px;
+    border-left: 6px solid gold;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.right-content {
+    grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr repeat(4, 1fr);
+
+}
+
+.announcement-header {
+    grid-row: 1/2;
+}
+
+.announcements-content {
+    grid-row: 2/5;
+
+    padding: 0px 33px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.announcements-content>div:nth-of-type(1) {
+    background-color: #FFF;
+    grid-row: 1/2;
+    border-bottom: 1px solid #000;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+
+
+}
+
+.announcements-content>div:nth-of-type(2) {
+    background-color: #FFF;
+    grid-row: 2/3;
+
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+
+
+}
+
+.announcements-content>div:nth-of-type(3) {
+    background-color: #FFF;
+    grid-row: 3/4;
+
+    border-top: 1px solid #000;
+
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+
+
+
+}
+
+.trending-header {
+    grid-row: 5/6;
+}
+
+.trending-content {
+    grid-row: 6/10;
+
+    padding: 0px 33px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) .5fr;
+
+}
+
+.trending-content>div:nth-of-type(1) {
+    background-color: #FFF;
+    grid-row: 1/2;
+    border-bottom: 1px solid #000;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+}
+
+.trending-content>div:nth-of-type(2) {
+    background-color: #FFF;
+    grid-row: 2/3;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.trending-content>div:nth-of-type(3) {
+    background-color: #FFF;
+    grid-row: 3/4;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.trending-content>div:nth-of-type(4) {
+    background-color: #FFF;
+    grid-row: 4/5;
+    border-top: 1px solid #000;
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+
+}
+
+
+
+*/
+/* ------------------------------------------------------------------------------------------------ */
