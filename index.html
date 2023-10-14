@@ -6,139 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="app.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
             <ul>
-                <li>
-                    <h2><img src="icons/view-grid-outline.svg" alt="">Dashboard</h2>
+                <li id="sidebar-header">
+                    <h2><img src="images/view-grid-outline.svg" alt="">Dashboard</h2>
                 </li>
                 <li></li>
-                <li><img src="icons/home-heart.svg" alt="">Home</li>
-                <li><img src="icons/face-man-profile.svg" alt="">Profile</li>
-                <li><img src="icons/email-outline.svg" alt="">Messages</li>
-                <li><img src="icons/history.svg" alt="">History</li>
-                <li><img src="icons/checkbox-marked-circle-auto-outline.svg" alt="">Tasks</li>
-                <li><img src="icons/hammer-sickle.svg" alt="">Communities</li>
+                <li><img src="images/home-circle-outline.svg" alt="">Home</li>
+                <li><img src="images/face-man-profile.svg" alt="">Profile</li>
+                <li><img src="images/message-text-outline.svg" alt="">Messages</li>
+                <li><img src="images/history.svg" alt="">History</li>
+                <li><img src="images/checkbox-marked-circle-auto-outline.svg" alt="">Tasks</li>
+                <li><img src="images/hammer-sickle.svg" alt="">Communities</li>
                 <li></li>
-                <li><img src="icons/cogs.svg" alt="">Settings</li>
-                <li><img src="icons/lifebuoy.svg" alt="">Support</li>
-                <li><img src="icons/vpn.svg" alt="">Privacy</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="images/cog.svg" alt="">Settings</li>
+                <li><img src="images/lifebuoy.svg" alt="">Support</li>
+                <li><img src="images/vpn.svg" alt="">Privacy</li>
+                <li id="sidebar-footer"></li>
             </ul>
         </div>
-        <div class="header">
-            <div class="search-section">
-                <form action="#" class="search">
-                    <button class="header-button" type="submit">
-                        <img src="icons/search-web.svg" alt="">
-                    </button>
-                    <input type="text" placeholder="Search..." name="search">
-                </form>
-                <div class="icons">
-                    <img src="icons/alarm.svg" alt="">
-                    <img src="icons/paw.svg" alt="">
-                    <p>Stuart Spackman</p>
-                </div>
+        <div class="nav">
+            <div class="top">
+                <ul>
+                    <li id="mag"><img id="magnify" src="images/magnify.svg" alt=""></li>
+                    <li id="for-input"><input type="text"></li>
+                    <li id="top-spacer"></li>
+                    <li><img src="images/cat.svg" alt=""></li>
+                    <li><img id="for-margin" src="images/paw.svg" alt=""></li>
+                    <li>Stuart Spackman</li>
+                </ul>
             </div>
-            <div class="buttons-section">
-                <div class="greeting-section">
-                    <div class="large-icon"><img
-                            src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
-                            alt=""></div>
-                    <div class="greeting">
+            <div class="bottom">
+                <ul>
+                    <li><img src="images/cat.png" alt=""></li>
+                    <li id="name-header">
                         <p>Hi there,</p>
-                        <h2>Stuart Spackman (github.com/stuart-spackman)</h2>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>New</button><button>Upload</button><button>Share</button>
-                </div>
+                        <h2>Stuart Spackman (@stuart-spackman)</h2>
+                    </li>
+                    <li id="bottom-spacer"></li>
+                    <li><button>New</button></li>
+                    <li id="upload"><button>Upload</button></li>
+                    <li><button>Share</button></li>
+                </ul>
             </div>
         </div>
         <div class="content">
-            <div class="left-content">
+            <div class="projects">
                 <div class="projects-header">
                     <h3>My Projects</h3>
                 </div>
-                <div class="projects">
-                    <div>
-                        <h5>Project 1</h5>
-                        <p>A project description could go here.</p>
+                <div class="project-cards">
+                    <div class="card-1">
+                        <h4>Example Project 1</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
-                    <div>
-                        <h5>Project 2</h5>
-                        <p>A project description could go here.</p>
+                    <div class="card-2">
+                        <h4>Example Project 2</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
-                    <div>
-                        <h5>Project 3</h5>
-                        <p>A project description could go here.</p>
+                    <div class="card-3">
+                        <h4>Example Project 3</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
-                    <div>
-                        <h5>Project 4</h5>
-                        <p>A project description could go here.</p>
+                    <div class="card-4">
+                        <h4>Example Project 4</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
-                    <div>
-                        <h5>Project 5</h5>
-                        <p>A project description could go here.</p>
+                    <div class="card-5">
+                        <h4>Example Project 5</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
-                    <div>
-                        <h5>Project 6</h5>
-                        <p>A project description could go here.</p>
+                    <div class="card-6">
+                        <h4>Example Project 6</h4>
+                        <p>A description of an example project coild go here! Someday I'll have lots of projects to list
+                            among these cards.</p>
+                        <footer><img src="images/star-plus.svg" alt=""><img src="images/eye-plus-outline.svg"
+                                alt=""><img src="images/download-circle.svg" alt=""></footer>
                     </div>
                 </div>
             </div>
-            <div class="right-content">
+            <div class="updates">
                 <div class="announcements-header">
                     <h3>Announcements</h3>
                 </div>
-                <div class="announcements-content">
-                    <div>
-                        <h5>Annoucement 1</h5>
-                        <p>An announcement could go here.</p>
-                    </div>
-                    <div>
-                        <h5>Annoucement 2</h5>
-                        <p>An announcement could go here too!</p>
-                    </div>
-                    <div>
-                        <h5>Annoucement 1</h5>
-                        <p>Here's where I could put another annoucement.</p>
+                <div class="announcements">
+                    <div class="inner-announcements">
+                        <div class="inner-1">
+                            <h4>Announcement 1</h4>
+                            <p>An announcement could go here.</p>
+                        </div>
+                        <div class="inner-2">
+                            <h4>Announcement 2</h4>
+                            <p>An announcement could go here.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="trending-header">
                     <h3>Trending</h3>
                 </div>
-                <div class="trending-content">
-                    <div>
-                        <h5>@person1</h5>
-                        <p>This is a placeholder for a person's description.</p>
+                <div class="trending">
+                    <div class="inner-trend-1">
+                        <div class="image">
+                            <img src="images/trend-image-2.png" alt="">
+                        </div>
+                        <div class="trender">
+                            <h5>@trending-person-1</h5>
+                            <p>Here I could report on a trending person.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5>@person2</h5>
-                        <p>This is a placeholder for a person's description.</p>
+                    <div class="inner-trend-2">
+                        <div class="image">
+                            <img src="images/trend-image-1.png" alt="">
+                        </div>
+                        <div class="trender">
+                            <h5>@trending-person-2</h5>
+                            <p>Here I could report on a trending person.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5>@person3</h5>
-                        <p>This is a placeholder for a person's description.</p>
+                    <div class="inner-trend-3">
+                        <div class="image">
+                            <img src="images/trend-image-2.png" alt="">
+                        </div>
+                        <div class="trender">
+                            <h5>@trending-person-3</h5>
+                            <p>Here I could report on a trending person.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5>@person4</h5>
-                        <p>This is a placeholder for a person's description.</p>
-                    </div>
+                </div>
+                <div class="trending-footer">
                 </div>
             </div>
         </div>
